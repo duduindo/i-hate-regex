@@ -40,9 +40,42 @@
 - [ ] [Playground page](https://ihateregex.io/playground) where you can create your own expression and link to it.
 - [ ] User login and save regex
 
+## Setup 🚀
+
+1. Install [yarn](https://yarnpkg.com/)
+
+2. [Clone](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) this repo
+
+3. Install dependencies ⚙️
+
+  ``` bash
+  $ yarn install
+
+  ```
+4. Test on localhost 🛠
+  ``` bash
+  # serve with hot reload at localhost:3600
+  $ yarn dev
+  ```
+5. Build and Start nuxt server 🚀
+  ``` bash
+  # build for production and launch server
+  $ yarn build
+  $ yarn start
+  ```
+
+This project is built with Nuxt.js 🙌
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+
 ## Contribute Regex 🙏
 
-**To contribute:**
+Contribute to this project and make this the largest collection of useful expressions 😍
+
+You can also submit regex via this [google form](https://forms.gle/Cwo3VupujQJzeoYQ9)
+
+### To contribute:
 
 1. Add your regex to `/static/regex/data.json`
 
@@ -105,36 +138,31 @@
     *&lt;regex-id&gt; is the **id** from **data.json***
 
 
+That's it 🙌 Go ahead and shoot a new pull request✨✨
 
-## Build Setup 🚀
+### Descriptions
 
-1. Install [yarn](https://yarnpkg.com/)
+There are 2 descriptions for each regex. 
 
-2. [Clone](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) this repo
+- One is the **description** property inside `/static/regex/data.json`. 
 
-3. Install dependencies ⚙️
+    - This is used for page **meta description** as well.
+    - This is the **first description**
 
-  ``` bash
-  $ yarn install
+- Second is a dedicated **markdown file** in `/static/regex/markdown/<file>.md`
 
-  ```
-4. Test on localhost 🛠
-  ``` bash
-  # serve with hot reload at localhost:3000
-  $ yarn dev
-  ```
-5. Build and Start nuxt server 🚀
-  ``` bash
-  # build for production and launch server
-  $ yarn build
-  $ yarn start
-  ```
+  - This should explain the working of the expression in detail
+  - This is the **long description**
 
-This project is built with Nuxt.js 🙌
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+  <div align="center">
+  <img src="https://i.imgur.com/fRiJeql.png" width="600">
+  </div>
 
 
+| Property | Definition | example |
+|------|------------|------------|
+| **description** property inside `data.json` | This should explain about what the target match is in a few lines. It should not contain any html or markdown |A username is a unique identifier given to accounts in websites and social media |
+|dedicated **markdown file**|Explain about the expression and its working| ip addresses are of the range 0.0.0.0 - 255.255.255.255. The expression matches the ....(more)|
 
 
 ### Credits
